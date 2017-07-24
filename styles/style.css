@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@font-face {
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+button                         { cursor: pointer; padding: 0; border: 0; }
+select, input, textarea,button { font:12px Tahoma, sans-serif; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+body {
+    font: 400 16px 'Open Sans', sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+h2 {
+    font: 700 72px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #f9fafe;
+}
+
+h3 {
+    font: 400 30px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #343435;
+}
+
+.main-header {
+   /* width: 1500px; */
+    max-width: 100%;
+    padding:35px 0 300px;
+    background: url('../img/bg-main-header.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.main-logo {
+    display: block;
+    margin-left: 15px;
+    float: left;
+    width: 166px;
+    height: 33px;
+}
+
+.main-nav {
+    float: right;
+    overflow: hidden;
+    margin-bottom: 220px;
+}
+
+.main-nav li {
+    float: left;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 35px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font: 700 16px 'Raleway', sans-serif;
+    color: #f3f5fd;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    border: 1px solid #f9fafe;
+    border-radius: 5px;
+}
+
+.main-header .container {
+    clear: both;
+}
+
+.main-header h2 {
+    margin-bottom: 30px;
+}
+
+.main-header p {
+    margin-bottom: 90px;
+    font: 400 30px 'Open Sans', sans-serif;
+    color: #f9fafe;
+    text-transform: uppercase;
+}
+
+.find-form {
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.find-form .input-question {
+    padding-left: 30px;
+    width: 570px;
+    height: 60px;
+    border: 0;
+    color: #717171;
+    background-color: #fff;
+    font: 400 14px 'MyriadPro', sans-serif;
+    text-transform: uppercase;
+}
+
+.find-form .btn-submit {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    color: #fff;
+    background-color: #e7434e;
+    font: 700 14px 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.section-tours {
+    position: relative;
+    background-color: #fff;
+    padding: 180px 0 80px;
+}
+
+.stat-block {
+    position: absolute;
+    margin: 0 auto;
+    top: -70px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.stat-block li {
+    padding: 40px;
+    float: left;
+    width: 300px;
+    height: 140px;
+    border-right: 1px solid #d4d4d4;
+}
+
+.stat-block > li > p {
+    color: #717171;
+    margin-bottom: 5px;
+}
+
+.stat-block .bold-text {
+    color: #343434;
+    font: 700 30px 'Open Sans', sans-serif;
+}
+
+.section-tours h3 {
+    margin-bottom: 30px;
+}
+
+.section-tours .container > p {
+    margin-bottom: 80px;
+    font: 400 16px 'Open Sans', sans-serif;
+    color: #717171;
+    text-transform: uppercase;
+}
+
+.show-list {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.show-list li {
+    float:left;
+    margin: 0 30px 30px 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.list-destinations li {
+    width: 370px;
+    height: 360px;
+}
+
+.list-destinations li:first-child {
+    width: 770px;
+    height: 360px;
+}
+
+.list-destinations li:nth-child(2) {
+    margin-right: 0;
+}
+
+.show-list li:last-child {
+    margin-right: 0;
+}
+
+.show-list .description-block {
+    position: absolute;
+    overflow: hidden;
+    margin: 0 0;
+    top: 0;
+    left: 0;
+}
+
+.show-list .count-info {
+    margin: 30px 0 200px 30px;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e7434e;
+}
+
+.list-destinations .count-info {
+    width: 80px;
+    height: 40px;
+}
+
+.count-info p {
+    float: left;
+    font: 700 16px 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.list-destinations .count-info p::before {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../img/icon-boat.png') no-repeat center;
+}
+
+.description-block h4 {
+    text-align: left;
+    margin: 0 0 5px 30px;
+    font: 400 30px 'MyriadPro', sans-serif;
+    color: #fff;
+}
+
+.description-block > p {
+    margin-left: 30px;
+    font: 400 20px 'MyriadPro', sans-serif;
+    color: #fff;
+    text-align: left;
+    text-transform: none;
+}
+
+.btn-white {
+    display: block;
+    margin: 0 auto;
+    width: 310px;
+    height: 60px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    color: #343434;
+    font: 700 14px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.section-affiliate {
+    padding: 190px 0 160px;
+    background: url('../img/bg-section-affiliate.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.section-affiliate h2 {
+    margin-bottom: 30px;
+}
+
+.section-affiliate p {
+    margin-bottom: 85px;
+    font: 400 30px 'Open Sans', sans-serif;
+    color: #f9fafe;
+    text-transform: uppercase;
+}
+
+.btn-colored {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 60px;
+    border: 1px solid #e7434e;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #e7434e;
+    font: 700 14px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.section-boats {
+    padding: 100px 0 90px;
+}
+
+.section-boats h3 {
+    margin-bottom: 30px;
+}
+
+.section-boats .container > p {
+    margin-bottom: 95px;
+    font: 400 16px 'Open Sans', sans-serif;
+    color: #717171;
+    text-transform: uppercase;
+}
+
+.list-boats {
+    margin-bottom: 100px;
+}
+
+.list-boats li {
+    width: 570px;
+    height: 340px;
+}
+
+.list-boats li:nth-child(even) {
+    margin-right: 0;
+}
+
+.list-boats .count-info {
+    width: 105px;
+    height: 40px;
+}
+
+.list-destinations .count-info p::before {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../img/icon-boat.png') no-repeat center;
+}
+
+.section-boats .show-list .count-info {
+    margin-bottom: 180px;
+}
+
+.section-boats .btn-white {
+    width: 235px;
+}
+
+.list-boats .boat-location {
+    float: left;
+}
+
+.list-boats .berths-count {
+    float: left;
+}
+
+.list-boats .description-block {
+    overflow: hidden;
+}
+
+.list-boats p {
+    font: 400 16px 'Open Sans', sans-serif;
+}
+
+.list-boats .boat-location::before {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    content: '';
+    width: 15px;
+    height: 20px;
+    background: url('../img/icon-location.png') no-repeat center;
+}
+
+.list-boats .berths-count::before {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-top: 4px;
+    content: '';
+    width: 22px;
+    height: 14px;
+    background: url('../img/icon-people.png') no-repeat center;
+}
+
+.main-footer {
+    padding: 55px 0 70px;
+    background-color: #404040;
+}
+
+.footer-content > li  {
+    float: left;
+    width: 145px;
+    margin-right: 105px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-content > li:last-child {
+    margin-right: 0;
+}
+
+.footer-content .subscribe-block {
+    width: 415px;
+}
+
+.subscribe-form {
+    margin-bottom: 35px;
+    font-size: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subscribe-form .input-question {
+    padding-left: 30px;
+    width: 270px;
+    height: 40px;
+    border: 0;
+    color: #717171;
+    background-color: #fff;
+    font: 400 14px 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.subscribe-form .btn-submit {
+    position: relative;
+    width: 145px;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    background-color: #e7434e;
+    font: 400 14px 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-content h5 {
+    margin-bottom: 30px;
+    font: 700 14px 'Raleway', sans-serif;
+}
+
+.footer-content p {
+    font: 400 14px 'Open Sans', sans-serif;
+}
+
+.social-buttons {
+    overflow: hidden
+}
+
+.social-buttons li {
+    float: left;
+    margin-right: 20px
+}
+
+.social-buttons li a{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #717171;
+    border-radius: 50%;
+}
+
+.social-buttons li a:hover {
+    background-color: transparent;
+}
+
+.btn-fa a {
+    background: url("../img/icon-fb.png") no-repeat center;
+}
+
+.btn-tw a {
+    background: url("../img/icon-tw.png") no-repeat center;
+}
+
+.btn-pl a {
+    background: url("../img/icon-pl.png") no-repeat center;
+}
+
+@media only screen and (max-width: 1200px) {
+.find-form .input-question {
+        padding-left: 20px;
+        width: 470px;
+        height: 60px;
+        font: 400 14px 'MyriadPro', sans-serif;
+    }
+
+    .find-form .btn-submit {
+        width: 180px;
+        height: 60px;
+        font: 700 14px 'Raleway', sans-serif;
+    }
+
+
+    .stat-block li {
+        text-align: center;
+        padding: 20px;
+        display: inline-block;
+        width: 240px;
+        height: 100px;
+    }
+
+    .stat-block li:last-child {
+        border-right: 0;
+    }
+
+    .list-destinations li:nth-child(2) {
+        margin-right: 30px;
+    }
+
+    .footer-content > li {
+        width: 145px;
+        margin-right: 30px;
+    }
+}
